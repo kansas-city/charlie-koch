@@ -778,3 +778,12 @@ a:hover { text-decoration: underline; }
   box-shadow: var(--shadow-sm);
 }
 .article-hero figcaption { text-align: center; }
+
+/* ---------- Blog 2-column grid ---------- */
+.card-grid.two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 980px) {
+  .card-grid.two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .card-grid.two-col { grid-template-columns: 1fr; }
+}
