@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kansas-city.github.io/charlie-koch/sitemap.xml
