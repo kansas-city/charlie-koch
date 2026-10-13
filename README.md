@@ -55,4 +55,7 @@ Then visit http://localhost:8000
 
 ## Note on images
 
-All artwork is lightweight inline SVG (crisp at any size, fast to load). If you later add real photos, drop them in `images/` and update the `og:image` tags with a 1200×630 PNG/JPG for best social sharing.
+- **Avatar**: Charlie Koch's photo (`images/charlie-koch.webp` / `.jpg`, plus a 400px variant) is used site-wide as the author avatar, in square crop at 800px and compressed to WebP.
+- **Feature images**: each of the 10 articles has a topic-matched photo from [Unsplash](https://unsplash.com/license) (`images/feature-*.webp` with `.jpg` fallbacks), used as the card cover and article banner.
+- **Social images**: per-post 1200×630 OG images (`images/og-<post>.jpg`) plus a branded default (`images/og-default.jpg`) for the home, blog, about, and contact pages.
+- All photos are served as WebP with JPG fallback via `<picture>`. Replace the files in `images/` if you later want to use your own photography — filenames must stay the same.
